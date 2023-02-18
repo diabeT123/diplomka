@@ -1,0 +1,104 @@
+.achievement {
+ 
+    &__heading {
+        margin-bottom: 77px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;  
+        max-width: 1020px;  
+        margin: 0 auto;
+    }
+
+    &__row-item {
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
+        margin-bottom: 80px;    
+        &:first-child:after{
+            content: "";
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(-10deg, #fff 50%, #C800C8 50%); 
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &:nth-child(2):after{
+            content: "";
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(80deg, #fff 50%, #C800C8 50%); 
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &:last-child:after{
+            content: "";
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(190deg, #fff 50%, #C800C8 50%); 
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+        }
+        span{
+            width: 190px;
+            height: 190px;
+            background: #FAF1FA;
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        div{
+            width: 240px;
+            height: 240px;
+            background: #fff;
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__row-title {
+        color: #676668;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 34px;
+        margin-bottom: 13px;
+    }
+
+    &__row-desc {
+        color: #424143;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+}
+
+@media(max-width:980px){
+    .achievement{
+        &__row{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

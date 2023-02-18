@@ -1,0 +1,214 @@
+html {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+.wrapper{
+
+    overflow: hidden;
+}
+label {
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+.header__header {
+    padding: 120px 0px 50px 0px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.main__packages {
+    padding: 110px 0px 120px;
+}
+
+.main__choose {
+    padding: 120px 0px;
+}
+
+.main__achievement {
+    padding-bottom: 120px;
+}
+
+.main__awards {
+    padding: 80px 0px 100px;
+}
+
+.main__achiev {
+    padding: 100px 0px 80px;
+}
+
+.main__about {
+    padding: 150px 0px 120px 0px;
+}
+
+.main__services {
+    padding: 100px 0px 130px;
+}
+
+.main__brochure {
+    padding: 110px 0px 120px;
+}
+.main__faq{
+    padding: 110px 0px 100px;
+}
+.main__saying{
+    padding: 90px 0px 100px;
+}
+.main__clients{
+    padding-bottom: 100px;
+}
+.main__team{
+    padding: 40px 0px 20px;
+}
+.main__blogs{
+    padding: 100px 0px 120px;
+}
+.main__media{
+    padding-bottom: 100px;
+}
+.main__kick{
+    padding: 100px 0px 150px;
+}
+.footer__footer{
+    padding: 120px 0px 200px;
+}
+.button {
+    background: #C800C8;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 46px;
+    display: block;
+    transition: all .3s;
+    text-align: center;
+
+    &:hover {
+        background: #000;
+        transform: scale(1.05);
+    }
+}
+.swiper-pagination-bullet{
+    background: #C800C8;
+    height: 15px;
+    width: 15px;
+}
+
+.input {
+    background: rgba(230, 220, 241, 0.7);
+    opacity: 0.8;
+    border: 1px solid rgba(200, 0, 200, 0.3);
+    backdrop-filter: blur(15.0285px);
+    display: block;
+    height: 48px;
+}
+
+.heading__title {
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #676668;
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(146, 13, 179);
+    border-radius: 5px;
+}
+
+
+@media(max-width:600px){
+    .heading{
+        &__title{
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+    .main__packages{
+        padding: 50px 0px 80px 0px;
+    }
+    
+    .main__about{
+        padding: 100px 0px 80px 0px;
+    }
+    .main__choose {
+        padding: 50px 0px 80px;
+    }
+    
+    .main__achievement {
+        padding-bottom: 100px;
+    }
+    
+    .main__awards {
+        padding: 80px 0px 100px;
+    }
+    
+    .main__achiev {
+        padding: 100px 0px 60px;
+    }
+    .main__services {
+        padding: 80px 0px 100px;
+    }
+    
+    .main__brochure {
+        padding: 80px 0px 90px;
+    }
+    .main__faq{
+        padding: 80px 0px 80px;
+    }
+    .main__saying{
+        padding: 90px 0px 70px;
+    }
+    .main__clients{
+        padding-bottom: 60px;
+    }
+    .main__team{
+        padding: 90px 0px 120px;
+    }
+    .main__blogs{
+        padding: 90px 0px 90px;
+    }
+    .main__kick{
+        padding: 100px 0px 100px;
+    }
+    .footer__footer{
+        padding: 100px 0px 90px;
+    }
+}
+@media(max-width:400px){
+    .heading{
+        &__title{
+            font-size: 40px;
+        }
+    }
+    
+}
+@media(max-width:360px){
+    .heading{
+        &__title{
+            font-size: 30px;
+        }
+    }
+}

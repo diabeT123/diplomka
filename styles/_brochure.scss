@@ -1,0 +1,68 @@
+.brochure {
+    background: url("../images/decor/5.svg") 100% 0 no-repeat;
+    &__inner {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__heading-title {
+        max-width: 920px;
+        margin-bottom: 30px;
+    }
+
+    &__heading-subtitle {
+        max-width: 670px;
+    }
+
+    &__form {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__form-input{
+        width: 100%;
+        margin-left: 32px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    &__form-label {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__form-email{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    &__form-name{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+@media(max-width:550px){
+    .brochure{
+        &__form{
+            flex-direction: column;
+            
+        }
+        &__form-input{
+            margin: 0;
+        }
+        &__form-input{
+            &:first-child{
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

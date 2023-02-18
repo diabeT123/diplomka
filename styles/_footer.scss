@@ -1,0 +1,214 @@
+.footer {
+    background: #F4F5FB;
+
+    &__container {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        max-width: 1050px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__logo-hidden {
+        display: none;
+    }
+
+    &__col {
+        &:last-child {
+            .footer__col-link:last-child {
+                line-height: 130%;
+                margin-top: 20px;
+                display: block;
+            }
+        }
+
+        // pointer-events: none;
+    }
+
+    &__col img {
+        display: block;
+    }
+
+    &__col-title {
+        font-size: 22px;
+    }
+
+    &__col-link {
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    &__socials {
+        max-width: 170px;
+        margin-top: 90px;
+
+    }
+
+    &__socials--hidden {
+        display: none;
+    }
+
+    &__socials-title {
+        margin-bottom: 35px;
+        font-size: 19px;
+        line-height: 28px;
+    }
+
+    &__socials-list {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(4, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        line-height: 28px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 90%;
+            height: 2px;
+            background: #000;
+            opacity: 0.5;
+            position: absolute;
+            right: -300px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media(max-width:980px) {
+    .footer {
+        &__copyright {
+            justify-content: center;
+        }
+
+        &__copyright::after {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:700px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__socials {
+            display: none;
+        }
+
+        &__socials--hidden {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__socials-list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 46px;
+            }
+        }
+
+        &__col {
+            margin-bottom: 30px;
+            // pointer-events: visible;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__col-title{
+            text-align: center;
+        }
+        &__col-list {
+            text-align: center;
+            display: none;
+        }
+        &__inner {
+            align-items: flex-start;
+        }
+
+        &__col {
+            margin-bottom: 50px;
+            display: block;
+            width: 100%;
+            position: relative;
+            &:first-child {
+                img {
+                    display: none;
+                }
+                &::before{
+                    content: none;
+                }
+            }
+
+            &::before{
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: #000;
+                opacity: 0.1;
+                position: absolute;
+                bottom: -30px;
+            }
+        }
+
+        &__logo-hidden {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 90px;
+
+        }
+
+        &__col-list {
+            text-align: left;
+        }
+
+        &__col-title {
+            text-align: left;
+            position: relative;
+            display: block;
+            width: 100%;
+            &::after{
+                content: "";
+                width: 13px;
+                height: 8px;
+                background: url("../images/icons/acc__arrow.svg") 0 0 no-repeat;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all .3s;
+            }
+        
+        }
+        &__col-title--active{
+            &:after{   
+                transform: rotate(180deg);
+                top: 5px;
+            }
+        }
+
+        &__copyright {
+            max-width: 280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+

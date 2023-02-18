@@ -1,0 +1,109 @@
+.awards {
+    background: url("../images/backgrounds/3.jpg") 0 0 / cover no-repeat;
+
+
+    &__heading-title {
+        color: #fff;
+        margin-bottom: 70px;
+    }
+
+    &__item {
+        margin: 0 auto;
+        position: relative;
+        &:nth-child(2)::after{
+            content: "";
+            width: 360px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 276px;
+            left: -27px;
+        }
+        &:nth-child(2)::before{
+            content: "";
+            width: 250px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 148px;
+            right: 205px;
+            transform: rotate(90deg);
+        }
+        &:nth-child(3)::after{
+            content: "";
+            width: 360px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 0px;
+            left: -67px;
+        }
+        &:nth-child(3)::before{
+            content: "";
+            width: 250px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 122px;
+            right: -195px;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__stars {
+        position: absolute;
+        top: 88px;
+        left: 65px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 137px;
+        left: 59px;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color: #fff;
+        position: absolute;
+        top: 185px;
+        left: 106px;
+    }
+    &__list{
+        display: grid;
+        max-width: 800px;
+        grid-template: repeat(2,auto) / repeat(2,1fr);
+        margin: 0 auto;
+    }
+    &__image-box{
+        img{
+            max-width: 680px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width:750px){
+    .awards{
+        &__image-box{
+            img{
+                max-width: 500px;
+            }
+        }
+    }
+}
+@media(max-width:560px){
+    .awards{
+        &__image-box{
+            img{
+                width: 100%;
+                
+            }
+        }
+        &__heading-title{
+            margin-bottom: 55px;
+        }
+    }
+}
